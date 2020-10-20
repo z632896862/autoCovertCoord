@@ -1,9 +1,9 @@
-import com.leadmap.cloud.datagis.model.PipeLineParam;
-import com.leadmap.cloud.datagis.model.feature.LngLatLike;
-import com.leadmap.cloud.datagis.utils.PipeLineTransform;
+import Transform.PipeLineTransform;
 import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.io.ParseException;
 import org.locationtech.jts.io.WKTReader;
+import param.LngLatLike;
+import param.PipeLineParam;
 
 public class DealStr {
     static PipeLineParam pipeLineParam;
@@ -44,7 +44,7 @@ public class DealStr {
         geostr=removesymol(str,0,0);
         String[] cr=geostr.split(" ");
         LngLatLike lngLatLike=new LngLatLike(Double(cr[0]),Double(cr[1]));
-        LngLatLike cr84=PipeLineTransform.Transform(lngLatLike,pipeLineParam);
+        LngLatLike cr84= PipeLineTransform.Transform(lngLatLike,pipeLineParam);
         return String.format("%s %s",cr84.getX(),cr84.getY());
     }
     private static String dealLineString(String str)

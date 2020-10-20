@@ -1,12 +1,12 @@
+import DBparam.DBConfiguration;
+import DBparam.DataStore;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.leadmap.cloud.datagis.dao.DataStore;
-import com.leadmap.cloud.datagis.model.DBConfiguration;
-import com.leadmap.cloud.datagis.model.PipeLineParam;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import org.apache.commons.io.IOUtils;
 import org.locationtech.jts.io.ParseException;
 import org.yaml.snakeyaml.Yaml;
+import param.PipeLineParam;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -109,7 +109,7 @@ public class App extends Application {
             }
         }
     }
-    public static void ConverCoordALayer(DBconfig dbConfiguration,String layer,PipeLineParam pipeLineParam) throws SQLException, ParseException, ClassNotFoundException {
+    public static void ConverCoordALayer(DBconfig dbConfiguration, String layer, PipeLineParam pipeLineParam) throws SQLException, ParseException, ClassNotFoundException {
 
         Enumeration<Driver> driverEnum = DriverManager.getDrivers();
         //打印出所有驱动信息
