@@ -1,0 +1,1 @@
+{"transforms":[{"transform":{"code":"beijing54/114","projWkt":"+proj\u003dtmerc +lat_0\u003d0 +lon_0\u003d114 +k\u003d1 +x_0\u003d500000 +y_0\u003d0 +ellps\u003dWGS84  +units\u003dm +no_defs","type":"wkt","inverse":false}},{"transform":{"dx":-3837865.84175659,"dy":450879.521255791,"rot":-0.001661695255900326,"m":0.999970950197,"type":"4","inverse":false}}],"inverse":false}

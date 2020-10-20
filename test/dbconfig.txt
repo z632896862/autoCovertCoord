@@ -1,0 +1,3 @@
+jdbc:postgresql://192.168.1.218:2015/xinxiang_4f74fb243cf449448315661e8e8f551bgis
+postgres
+gis3857
